@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+body{
+    /* background-color: #101322; */
+    font-family: "EB Garamond", "Tinos", "Raleway", "Yuji Boku";
+    letter-spacing: 1px;
+}
+
+.cards-bg{
+    @apply bg-slate-900/70 backdrop-blur-sm;
+}
