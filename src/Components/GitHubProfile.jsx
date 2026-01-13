@@ -35,7 +35,10 @@ const GitHubProfile = () => {
 
   const handlequery = (e) => {
     e.preventDefault();
-    if (query.trim()) setSearchTrigger(query);
+    const trimed = query.trim();
+    if (trimed) {
+      setSearchTrigger(trimed);
+    }
     setQuery("");
   };
 
@@ -91,7 +94,7 @@ const GitHubProfile = () => {
                     {profiledetails.name || "A developer with no name"}
                   </h2>
                   <p className="text-white/80 max-[400px]:text-[0.9rem]">
-                    <span >Joined </span>
+                    <span>Joined </span>
                     {profiledetails.created_at.slice(0, 10) || "xxxx-xx-xx"}
                   </p>
                 </div>
