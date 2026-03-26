@@ -1,10 +1,13 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import GitHubProfile from "./Components/GitHubProfile";
 
 function App() {
   return (
     <>
-      <GitHubProfile />
+      <Routes>
+        <Route path="/" element={<GitHubProfile />} />
+      </Routes>
     </>
   );
 }

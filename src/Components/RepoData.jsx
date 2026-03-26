@@ -1,7 +1,12 @@
 import Bouncer from "./Bouncer";
 import { LinkOut, RepoForked, StarOutlined } from "../SVG_Component/SVGs";
+import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
-const RepoData = ({ data }) => {
+const RepoData = () => {
+
+  const data = useSelector((state) => state.repodata.repositorydata);
+  
   if (!data) return <Bouncer />;
 
   return (
@@ -25,9 +30,9 @@ const RepoData = ({ data }) => {
                   <h1 className="text-blue-500 text-[1.05rem] break-all">
                     {repo.owner.login}/{repo.name}
                   </h1>
-                  <a href={repo.html_url} target="_blank" rel="noreferrer">
+                  <Link to={`${repo.clone_url}`} target="_blank" rel="noreferrer">
                     <LinkOut className="text-white/80" />
-                  </a>
+                  </Link>
                 </div>
 
                 {/* Stars */}

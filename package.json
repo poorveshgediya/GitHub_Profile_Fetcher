@@ -10,13 +10,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.1.18",
+    "@reduxjs/toolkit": "^2.11.2",
+    "@tailwindcss/vite": "^4.2.2",
     "@vercel/analytics": "^1.6.1",
+    "dayjs": "^1.11.20",
     "lucide-react": "^0.562.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "react-router-dom": "^7.12.0",
-    "tailwindcss": "^4.1.18",
+    "react-redux": "^9.2.0",
+    "react-router-dom": "^7.13.1",
+    "tailwindcss": "^4.2.2",
     "zod": "^4.3.5"
   },
   "devDependencies": {
