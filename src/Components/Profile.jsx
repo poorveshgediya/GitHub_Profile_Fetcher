@@ -96,7 +96,7 @@ const Profile = () => {
                 </h2>
                 <p className="text-white/80 max-[400px]:text-[0.9rem]">
                   <span>Joined </span>
-                  {/* {dataprofile.created_at.slice(0, 10) || "xxxx-xx-xx"} */}
+                  {dataprofile.created_at.slice(0, 10) || "xxxx-xx-xx"}
                 </p>
               </div>
               <p className="text-sm text-blue-500">@{dataprofile.login}</p>
